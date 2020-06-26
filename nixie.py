@@ -65,6 +65,8 @@ while not crashed:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             crashed = True
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            crashed = True    
 
     
     clock.tick(60)
